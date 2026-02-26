@@ -3,7 +3,15 @@
 |Aula                 | Conteúdo |
 | ----------------------------------------------------------------| |
 Aula 01 - 25/02/2026 | :material-check: [Introdução](../Disciplina/docs/aula01/intro.pdf) a Computação Gráfica |
-
+Aula 02 - 04/03/2026 | :material-check:  |
+Aula 03 - 18/03/2026 | :material-check: ED01 |
+Aula 04 - 01/04/2026 | :material-check: ED02 |
+Aula 05 - 15/04/2026 | :material-check: ED03 |
+Aula 06 - 29/04/2026 | :material-check:  |
+Aula 07 - 13/05/2026 | :material-check: ED04 |
+Aula 08 - 27/05/2026 | :material-check: ED05 |
+Aula 09 - 10/06/2026 | :material-check: ED06 |
+Aula 10 - 17/06/2026 | :material-check:  |
 <!--
 Aula 02 - 13/08/2025 | :material-check: [Computação Visual](../Disciplina/docs/aula02/intro_computacao_visual.pdf) e [Bibliotecas Gráficas](../Disciplina/docs/aula02/bibliotecas_graficas.pdf) <br> <iframe src="../.././cg.html" width="100%" height="170px"></iframe>|
 Aula 03 - 20/08/2025 | :material-check: [Imagens](../Disciplina/docs/aula03/imagens.pdf) <br> :material-check: [Dispositivos e Espaço de Cores](../Disciplina/docs/aula03/imagens_cg.pdf) <br> :material-check: [Visão Humana](../Disciplina/docs/aula03/imagens_m.pdf)  |
