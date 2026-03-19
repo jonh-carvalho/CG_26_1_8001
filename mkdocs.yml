@@ -86,6 +86,8 @@ markdown_extensions:
 plugins:
   - search
   - iframe
+  - mkdocs-jupyter
+  
 
           
   
