@@ -6,7 +6,7 @@ Aula 01 - 25/02/2026 | :material-check: [Introdução](../Disciplina/docs/aula01
 Aula 02 - 04/03/2026 | :material-check:  |
 Aula 03 - 18/03/2026 | :material-check: ED01 |
 Aula 04 - 01/04/2026 | :material-check: ED02 - <br> :material-check: [Bibliotecas Gráficas](../Disciplina/docs/aula02/bibliotecas_graficas.pdf) <br> :material-check: [Imagens](../Disciplina/docs/aula03/imagens.pdf) <br> :material-check: [Transformações Geométricas 2D](../Disciplina/docs/aula05/tg2d3d.pdf)|
-Aula 05 - 15/04/2026 | :material-check: ED03 |
+Aula 05 - 15/04/2026 | :material-check: ED03 - <br> :material-check: [Transformações Geométricas 3D](../Disciplina/docs/aula05/tg3d.pdf) <br> :material-check: [Blender](../Disciplina/docs/blender/blender.pdf)|
 Aula 06 - 29/04/2026 | :material-check:  |
 Aula 07 - 13/05/2026 | :material-check: ED04 |
 Aula 08 - 27/05/2026 | :material-check: ED05 |
