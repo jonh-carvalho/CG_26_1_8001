@@ -1,9 +1,5 @@
 # Relatório AC04 - Preparação de Cena 3D no Blender
 
-**Aluno:** Seu Nome Sobrenome  
-**Ferramenta utilizada:** Blender 4.5 LTS  
-**Arquivo da cena:** `AC04_NomeSobrenome.blend`
-
 ---
 
 ## 1. Transformações Aplicadas — Model
