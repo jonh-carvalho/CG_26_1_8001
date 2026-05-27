@@ -1,7 +1,5 @@
 # Relatório AC04 - Preparação de Cena 3D no Blender
 
----
-
 ## 1. Transformações Aplicadas — Model
 
 Na cena criada no Blender, os objetos principais foram modelados a partir de formas geométricas simples, como plano, cubo e cilindro. Para montar a mesa de estudo, foram aplicadas transformações de **escala**, **rotação** e **translação**.
