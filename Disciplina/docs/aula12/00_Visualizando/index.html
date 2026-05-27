@@ -795,7 +795,7 @@
 
 
 <h1 id="principais-modelos-de-iluminacao-em-computacao-grafica">Principais Modelos de Iluminação em Computação Gráfica<a class="headerlink" href="#principais-modelos-de-iluminacao-em-computacao-grafica" title="Permanent link">&para;</a></h1>
-<h2 id="1-modelo-de-iluminacao-local-simple-illumination">1. <strong>Modelo de Iluminação Local (Simple Illumination)</strong><a class="headerlink" href="#1-modelo-de-iluminacao-local-simple-illumination" title="Permanent link">&para;</a></h2>
+<h2 id="1-modelo-de-iluminacao-local-simple-illumination-ano-1975">1. <strong>Modelo de Iluminação Local (Simple Illumination - ano 1975)</strong><a class="headerlink" href="#1-modelo-de-iluminacao-local-simple-illumination-ano-1975" title="Permanent link">&para;</a></h2>
 <h3 id="caracteristicas">Características:<a class="headerlink" href="#caracteristicas" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Considera apenas luz direta das fontes</li>
@@ -806,9 +806,11 @@
 <ul>
 <li><strong>Ambiente</strong>: Iluminação constante</li>
 <li><strong>Difusa</strong>: Reflexão Lambertiana</li>
-<li><strong>Especular</strong>: Reflexão direcional (Phong, Blinn-Phong)</li>
+<li>
+<p><strong>Especular</strong>: Reflexão direcional (Phong, Blinn-Phong)</p>
+<h2 id="11-modelo-de-phong-1975">1.1. <strong>Modelo de Phong (1975)</strong><a class="headerlink" href="#11-modelo-de-phong-1975" title="Permanent link">&para;</a></h2>
+</li>
 </ul>
-<h2 id="2-modelo-de-phong-1975">2. <strong>Modelo de Phong (1975)</strong><a class="headerlink" href="#2-modelo-de-phong-1975" title="Permanent link">&para;</a></h2>
 <h3 id="formula">Fórmula:<a class="headerlink" href="#formula" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>I = I_ambiente + I_difusa + I_especular
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>I = k_a * I_a + k_d * (L·N) * I_d + k_s * (R·V)^α * I_s
@@ -817,9 +819,11 @@
 <ul>
 <li>Simula materiais plásticos/brilhantes</li>
 <li>Componente especular dependente do ângulo de visão</li>
-<li>Expoente <code>α</code> controla a "nitidez" do brilho</li>
+<li>
+<p>Expoente <code>α</code> controla a "nitidez" do brilho</p>
+<h2 id="12-modelo-blinn-phong-1977">1.2. <strong>Modelo Blinn-Phong (1977)</strong><a class="headerlink" href="#12-modelo-blinn-phong-1977" title="Permanent link">&para;</a></h2>
+</li>
 </ul>
-<h2 id="3-modelo-blinn-phong-1977">3. <strong>Modelo Blinn-Phong (1977)</strong><a class="headerlink" href="#3-modelo-blinn-phong-1977" title="Permanent link">&para;</a></h2>
 <h3 id="melhoria-sobre-phong">Melhoria sobre Phong:<a class="headerlink" href="#melhoria-sobre-phong" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Usa vetor <strong>half-vector</strong> (H) em vez de reflexão (R)</li>
@@ -849,12 +853,14 @@
 </ul>
 <h2 id="6-modelo-de-cook-torrance-1981">6. <strong>Modelo de Cook-Torrance (1981)</strong><a class="headerlink" href="#6-modelo-de-cook-torrance-1981" title="Permanent link">&para;</a></h2>
 <h3 id="formula_1">Fórmula:<a class="headerlink" href="#formula_1" title="Permanent link">&para;</a></h3>
-<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>f_r = k_d * f_lambert + k_s * (D * F * G) / (4 * (N·V) * (N·L))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>f_r = k_d * f_lambert + k_s * (D * F * G) / (4 * (N·V) * (N·L))
 </span></code></pre></div>
-Onde:
-- <strong>D</strong>: Distribuição de normais (NDF)
-- <strong>F</strong>: Termo de Fresnel
-- <strong>G</strong>: Função de sombreamento/ocultação</p>
+<p>Onde:</p>
+<ul>
+<li><strong>D</strong>: Distribuição de normais (NDF)</li>
+<li><strong>F</strong>: Termo de Fresnel</li>
+<li><strong>G</strong>: Função de sombreamento/ocultação</li>
+</ul>
 <h2 id="7-modelo-oren-nayar-1994">7. <strong>Modelo Oren-Nayar (1994)</strong><a class="headerlink" href="#7-modelo-oren-nayar-1994" title="Permanent link">&para;</a></h2>
 <h3 id="especializado-para">Especializado para:<a class="headerlink" href="#especializado-para" title="Permanent link">&para;</a></h3>
 <ul>
