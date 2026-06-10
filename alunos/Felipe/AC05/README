@@ -1,0 +1,53 @@
+# AC05 — Iluminação, Textura e Realismo
+
+**Ferramenta:** Blender 4.5 LTS  
+**Engine de Render:** EEVEE Next  
+**Resolução:** 1920 × 1080px
+
+---
+
+## 1. Componentes de Iluminação — Modelo Phong
+
+A iluminação da cena foi configurada seguindo os três componentes do modelo de Phong, que decompõe a luz em ambiente, difusa e especular. A tabela abaixo apresenta os valores finais utilizados:
+
+| Componente | Configuração no Blender | Valor Utilizado |
+|---|---|---|
+| Ambiente | World → Background: cor #0A0A1A, Strength | Cor: #0A0A1A / Strength: 0,05 |
+| Difusa | Luz_Abajur → Power; cor da luz | Power: 50W / Cor: #FFFFFF |
+| Especular | Roughness nos materiais dos objetos | Variável por objeto (ver Seção 2) |
+
+**Componente Ambiente:** A iluminação ambiente foi configurada no World Shader com cor azul muito escura (#0A0A1A) e intensidade 0,05, simulando uma noite fechada com mínimo de luz difusa no ambiente. Não gera sombras e serve como base para a cena noturna.
+
+**Componente Difusa:** A luz Point (Luz_Abajur), posicionada dentro da cúpula do abajur, foi configurada com Power de 50W e cor branca (#FFFFFF). Essa luz ilumina suavemente os objetos ao redor, criando gradientes de luz e sombra característicos da iluminação difusa.
+
+**Componente Especular:** O componente especular foi controlado pelo valor de Roughness nos materiais de cada objeto. Valores baixos de Roughness (como no copo, 0,15) produzem reflexos mais intensos, enquanto valores altos (como no livro, 0,9) resultam em superfícies opacas sem brilho.
+
+---
+
+## 2. Materiais Aplicados — Justificativa
+
+| Objeto | Material | Roughness / Configuração |
+|---|---|---|
+| Mesa | PBR com textura de imagem (madeira escura) | Metallic: 0,0 / Specular IOR: 0,3 |
+| Livro | Procedural — Noise Texture + Color Ramp | Roughness: 0,9 / Metallic: 0,0 |
+| Copo | Vidro fosco — Transmission Weight: 1,0 | Roughness: 0,15 / IOR: 1,45 |
+| Lápis | Cor sólida — vermelho (#CC2200) | Roughness: 0,5 / Metallic: 0,0 |
+| Abajur (Cúpula) | Plástico com emissão — bege (#F5E6C0) | Emission Strength: 0,1 |
+
+A mesa recebeu texturas PBR de madeira escura obtidas no Poly Haven, com mapeamento UV via Smart UV Project, conferindo realismo à superfície principal da cena. O livro utilizou textura procedural com Noise Texture para simular variação de cor no papel envelhecido, com alta rugosidade para aparência fosca. O copo foi configurado como vidro levemente fosco com transmissão total de luz, utilizando Raytraced Transmissions do EEVEE Next para refração realista. O lápis recebeu cor sólida vermelha, representando um objeto simples de plástico. A cúpula do abajur possui emissão leve para simular o aquecimento do plástico pela lâmpada interna.
+
+---
+
+## 3. Comparação Visual — Renders
+
+### Render 1 — Cena noturna completa
+
+Com o World Shader ativo (Strength 0,05), a cena apresenta uma iluminação ambiente sutil de tom azulado escuro, característica de uma noite fechada. A luz do abajur (50W) ilumina os objetos próximos, criando contraste entre as áreas iluminadas e as regiões em sombra. É possível observar os reflexos especulares na superfície da mesa e a transmissão de luz no copo de vidro.
+
+### Render 2 — Sem luz ambiente
+
+Com o World Shader desativado (Strength 0,0), a contribuição exclusiva da Luz_Abajur fica evidente. As regiões fora do alcance da luz Point ficam completamente escuras, evidenciando o cone de iluminação do abajur. Essa comparação demonstra claramente a diferença entre o componente ambiente e a iluminação direta, conceito central do modelo de Phong.
+
+---
+
+*Engine utilizada: EEVEE Next (Blender 4.5 LTS) — Resolução: 1920 × 1080px*
