@@ -22,60 +22,60 @@ theme: gaia
 
 ---
 
-- **Princípios básicos da animação**
+### **Princípios básicos da animação**
 
-    - Keyframes (quadros-chave)
+#### Keyframes (quadros-chave)
     
-    > Animação keyframe é uma técnica que define "quadros-chave" ou momentos específicos de uma animação, onde o software preenche automaticamente os quadros intermediários para criar uma transição suave entre eles. Keyframes são usados para controlar a mudança de propriedades de um elemento ao longo do tempo, como sua posição, escala, rotação ou cor. Esta técnica é amplamente utilizada em softwares de edição de vídeo, motion design e no desenvolvimento web (CSS) para criar animações. 
+> Animação keyframe é uma técnica que define "quadros-chave" ou momentos específicos de uma animação, onde o software preenche automaticamente os quadros intermediários para criar uma transição suave entre eles. Keyframes são usados para controlar a mudança de propriedades de um elemento ao longo do tempo, como sua posição, escala, rotação ou cor. Esta técnica é amplamente utilizada em softwares de edição de vídeo, motion design e no desenvolvimento web (CSS) para criar animações. 
 
 ---
 
-    - Interpolação
+#### Interpolação
 
-    > A interpolação em animação é o processo automático que preenche os quadros intermediários entre duas poses-chave, criando transições suaves entre elas. Isso permite que a animação pareça fluida e natural, animando propriedades como posição, rotação, escala e efeitos de cor em objetos como gráficos, textos e clipes. Existem diferentes tipos de interpolação, como a linear (velocidade constante) e a Bezier (com controle manual da velocidade), que podem ser ajustadas para obter efeitos específicos. 
+> A interpolação em animação é o processo automático que preenche os quadros intermediários entre duas poses-chave, criando transições suaves entre elas. Isso permite que a animação pareça fluida e natural, animando propriedades como posição, rotação, escala e efeitos de cor em objetos como gráficos, textos e clipes. Existem diferentes tipos de interpolação, como a linear (velocidade constante) e a Bezier (com controle manual da velocidade), que podem ser ajustadas para obter efeitos específicos. 
 
 ---
 
-    - Timeline 
+#### Timeline 
     
-    > A "timeline de animação" refere-se à linha do tempo visual em softwares de animação para organizar eventos e quadros, ou à propriedade CSS que vincula a animação a um evento de rolagem. Em softwares como o Blender, a timeline é uma barra onde você insere "keyframes" para registrar a posição, rotação ou escala de objetos em quadros específicos, criando assim a animação ao reproduzir os movimentos entre eles.
+> A "timeline de animação" refere-se à linha do tempo visual em softwares de animação para organizar eventos e quadros, ou à propriedade CSS que vincula a animação a um evento de rolagem. Em softwares como o Blender, a timeline é uma barra onde você insere "keyframes" para registrar a posição, rotação ou escala de objetos em quadros específicos, criando assim a animação ao reproduzir os movimentos entre eles.
 
 ---    
 
-    - Curvas de animação
+#### Curvas de animação
     
-    > Curvas de animação são representações gráficas que mostram como um valor, como posição, rotação ou escala, muda ao longo do tempo para criar movimento suave e realista. Elas são usadas em softwares de animação e design para controlar a "interpolação" entre quadros-chave, permitindo suavizar acelerações e desacelerações de maneira visual e controlável, com opções como interpolação linear, suave ou baseada em curvas de Bézier. 
+> Curvas de animação são representações gráficas que mostram como um valor, como posição, rotação ou escala, muda ao longo do tempo para criar movimento suave e realista. Elas são usadas em softwares de animação e design para controlar a "interpolação" entre quadros-chave, permitindo suavizar acelerações e desacelerações de maneira visual e controlável, com opções como interpolação linear, suave ou baseada em curvas de Bézier. 
 
 ---
 
-    - Conceitos de FPS (frames por segundo)
+#### Conceitos de FPS (frames por segundo)
 
-    > Em animação, FPS é a sigla para Frames Per Second, ou Quadros por Segundo em português. Refere-se à taxa de quadros na qual uma sequência de imagens estáticas é exibida para criar a ilusão de movimento contínuo
-
----
-
-### **Interface do Blender**
-
-- **Apresentação da interface**
-
-    - Viewport 3D
-    - Timeline
-    - Graph Editor
-    - Properties Panel
+> Em animação, FPS é a sigla para Frames Per Second, ou Quadros por Segundo em português. Refere-se à taxa de quadros na qual uma sequência de imagens estáticas é exibida para criar a ilusão de movimento contínuo
 
 ---
 
-- **Primeiros passos**
+## **Interface do Blender**
 
-    - Navegação na cena 3D
-    - Manipulação de objetos básicos
-    - Sistema de coordenadas e transformações
+#### **Apresentação da interface**
+
+- Viewport 3D
+- Timeline
+- Graph Editor
+- Properties Panel
+
+---
+
+#### **Primeiros passos**
+
+- Navegação na cena 3D
+- Manipulação de objetos básicos
+- Sistema de coordenadas e transformações
 
 ---
 
 #### **Hands-on - Animação Simples**
 
-**Exercício 1: Bola Quicando**
+##### **Exercício 1: Bola Quicando**
 
 Conceitos computacionais aplicados:
 
@@ -85,7 +85,7 @@ Conceitos computacionais aplicados:
 
 ---
 
-**Passo a passo:**
+##### **Passo a passo:**
 
 1. Criar uma esfera (Add → Mesh → UV Sphere)
 2. Posicionar no topo da cena (eixo Z)
@@ -97,7 +97,7 @@ Conceitos computacionais aplicados:
 
 ---
 
-**Exercício 2: Rotação de Objeto**
+##### **Exercício 2: Rotação de Objeto**
 
 1. Criar cubo
 2. Animar rotação em 360 graus
