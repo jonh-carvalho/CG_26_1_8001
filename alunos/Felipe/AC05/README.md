@@ -44,7 +44,7 @@ O componente especular foi controlado pelo valor de Roughness nos materiais de c
 
 A mesa utiliza textura PBR de madeira escura obtida no Poly Haven, com UV Mapping via Smart UV Project, garantindo realismo.  
 O livro usa textura procedural com Noise Texture para simular papel envelhecido.  
-O copo foi configurado como vidro com transmissão total de luz e refração realista (Raytraced Transmissions no EEVEE Next).  
+O copo foi configurado como vidro com transmissão total de luz e refração realista.  
 O lápis utiliza material simples de cor sólida.  
 A cúpula do abajur possui emissão leve para simular o brilho do material iluminado internamente.
 
@@ -63,5 +63,5 @@ Com o World Shader desativado (Strength 0,0), apenas a luz do abajur influencia 
 ---
 
 ## Detalhes Técnicos
-- Engine: EEVEE Next (Blender 4.5 LTS)
+- Engine: EEVEE (Blender 4.5 LTS)
 - Resolução: 1920 × 1080 px
