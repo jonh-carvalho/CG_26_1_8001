@@ -65,4 +65,5 @@ Com o World Shader desativado (Strength 0,0), apenas a luz do abajur influencia 
 ## Detalhes Técnicos
 - Engine: EEVEE (Blender 4.5 LTS)
 - Resolução: 1920 × 1080 px
+  
 https://drive.google.com/drive/folders/11WjHKMkFyalysK21lc_yCXRsyItMHZ1T?usp=drive_link
